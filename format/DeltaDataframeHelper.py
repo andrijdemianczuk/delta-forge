@@ -74,7 +74,8 @@ class DeltaDataframeHelper:
         Example
         -------
         # Format all columns in a dataframe (df) to Delta Lake column naming conventions
-        dfh = helpers.deltaFormatHelper.DeltaFormatHelper()
+        import delta-forge.format
+        dfh = format.DeltaFormatHelper.DeltaFormatHelper()
         df = dfh.formatDataframeCols(df=df)
 
         Raises
@@ -115,7 +116,8 @@ class DeltaDataframeHelper:
         Example
         -------
         # Replace all instances of a comma with a period in column labeled col1 and col2 in a dataframe (df)
-        dfh = helpers.deltaFormatHelper.DeltaFormatHelper()
+        import delta-forge.format
+        dfh = format.DeltaFormatHelper.DeltaFormatHelper()
         df = dfh.substringReplaceData(["col1","col2"])(df, ",", ".")
 
         Raises
@@ -158,7 +160,8 @@ class DeltaDataframeHelper:
         Example
         -------
         # Cast columns labeled col1 and col2 in a dataframe (df) to double type
-        dfh = helpers.deltaFormatHelper.DeltaFormatHelper()
+        import delta-forge.format
+        dfh = format.DeltaFormatHelper.DeltaFormatHelper()
         df = dfh.castColTypes(["col1","col2"])(df, DoubleType())
 
         Raises
