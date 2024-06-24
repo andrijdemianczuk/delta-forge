@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "delta-forge"
 version = "1.0.0"
-description = "Support common PySpark dataframe operations on Delta"
+description = "Support common PySpark operations on Delta"
 readme = "README.md"
 authors = [{ name = "Andrij Demianczuk", email = "andrij.demianczuk@databricks.com" }]
 license = { file = "LICENSE" }
