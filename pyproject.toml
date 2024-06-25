@@ -18,14 +18,12 @@ classifiers = [
 ]
 keywords = ["delta", "pyspark", "spark"]
 dependencies = [
-    "feedparser >= 5.2.0",
-    "html2text",
-    'tomli; python_version < "3.11"',
+    "pyspark"
 ]
 requires-python = ">=3.10"
 
 [project.optional-dependencies]
-dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+dev = ["black", "pip-tools", "pytest"]
 
 [project.urls]
 Homepage = "https://www.databricks.com/"
